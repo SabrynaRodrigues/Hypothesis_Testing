@@ -6,7 +6,9 @@
 
 The product team has developed **Flow B**, a new strategy that recommends music based on users with similar tastes (collaborative filtering system). The hypothesis is that this personalization will increase user engagement.
 
-## **A/B Test Data**
+![Capa](https://image2url.com/images/1761534453933-e94c4667-4238-4fdc-8d7b-fac0b39c4fa0.jpg)
+
+## **Test Data**
 
 - **Sample size**: 1,200 users
 - **Analyzed variable**: Listening time per song (in minutes)
@@ -56,19 +58,19 @@ import seaborn as sns
 sns.histplot(df['listening_time_min'])
 ```
 
-![image.png](attachment:738133a7-335e-4939-a717-ad25b0605891:image.png)
+![Hist](https://image2url.com/images/1761533930787-157ae411-09ba-4ee6-83ea-ca08fbd4f09c.png)
 
 ```python
 sns.boxplot(df['listening_time_min'])
 ```
 
-![image.png](attachment:6fcc0ab6-7809-4647-b5d5-47e4588ffd7f:image.png)
+![Boxplot](https://image2url.com/images/1761533829740-6b05a691-e102-4b20-b136-6b7a6d24b31e.png)
 
 ```python
 df_filtered = df.loc[df['listening_time_min']>= 4.5]
 ```
 
-![image.png](attachment:32c70e86-0d29-49ce-bfcd-99230696e284:image.png)
+![Matriz](https://image2url.com/images/1761533947148-e928c170-30da-4c08-bcb8-004a15d8edff.png)
 
 ## Confidence Interval Calculation
 
@@ -77,7 +79,7 @@ df_filtered = df.loc[df['listening_time_min']>= 4.5]
 - **Margin of Error**: ±0.038 minutes
 - **90% Confidence Interval**: [2.09; 2.17] minutes
 
-![image.png](attachment:ff660c5f-e5c7-41dd-84c7-67516219f739:d585da01-3090-4e8e-ad63-0bda28bbcc81.png)
+![Formula](https://image2url.com/images/1761533989218-dc79b451-3cbe-4a85-b17d-0c05d4ecc30e.png)
 
 ```python
 from math import sqrt
