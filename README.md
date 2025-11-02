@@ -21,8 +21,8 @@ import numpy as np
 import pandas as pd
 
 np.random.seed(42)
-n_users = 1200
-hypothetical_mean = 2.1
+n_users = 120
+hypothetical_mean = 2.4
 standard_deviation = 0.8
 
 listening_time = np.random.normal(loc=hypothetical_mean, scale=standard_deviation, size=n_users)
